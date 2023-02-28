@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1 class="ali">Percentage Cclcultor </h1>
+
+    <form onsubmit="calc1(); return false;">
+
+     <label for="om">Ontain Marks</label>
+   <input type="number" name="om" id="om1">
+   <label for="tm">Total Marks</label>
+    <input type="number" name="tm" id="tm1">
+  <button type="submit">calc</button>
+
+  <ol id="result1">
+
+    <li>ahmad</li>
+    <li>ali</li>
+  </ol>
+    </form>
+
+<!-- <button onclick="abc()"> ahmad</button> -->
+
+<script>
+  
+// function abc() {
+// alert("hi ahmad")
+
+    
+// }
+
+function calc1() {
+     let om = document.getElementById("om1").value;
+     let tm=document.getElementById("tm1").value;
+     res= om/tm *100;
+    //   document.write("you have got it"+ res+ "%");
+  document.getElementById("result1").innerHTML="you have got it"+ res+ "%";
+
+}
+
+
+</script>
+
+
+</body>
+</html>
